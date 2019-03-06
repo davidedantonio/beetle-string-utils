@@ -11,5 +11,13 @@
     "string"
   ],
   "author": "Davide D'Antonio <davide.dantonio@webeetle.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidedantonio/beetle-string-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/davidedantonio/beetle-string-utils/issues"
+  },
+  "homepage": "https://github.com/davidedantonio/beetle-string-utils#readme"
 }
