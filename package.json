@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/davidedantonio/beetle-string-utils/issues"
   },
-  "homepage": "https://github.com/davidedantonio/beetle-string-utils#readme"
+  "homepage": "https://github.com/davidedantonio/beetle-string-utils#readme",
+  "dependencies": {
+    "is-number": "^7.0.0"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  }
 }
