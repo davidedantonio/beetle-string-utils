@@ -1,10 +1,10 @@
 {
-  "name": "beetle-string-utils",
+  "name": "@davide-demos/beetle-string-utils",
   "version": "2.0.0",
   "description": "A wonderful module for beetle nodejs course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && tap test.js"
   },
   "keywords": [
     "utils",
@@ -24,6 +24,7 @@
     "is-number": "^7.0.0"
   },
   "devDependencies": {
-    "standard": "^12.0.1"
+    "standard": "^12.0.1",
+    "tap": "^12.6.0"
   }
 }

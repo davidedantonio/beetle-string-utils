@@ -3,7 +3,7 @@
 const isNumber = require('is-number')
 
 const isValidEmail = email => {
-  const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
   return re.test(String(email).toLowerCase())
 }
 
@@ -12,32 +12,32 @@ const isValidNumber = string => {
 }
 
 const ucFirstLetter = string => {
-  if (string === '') {
-    return string
+  if (!string) {
+    return ''
   }
 
   return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-const endWith = (string, searchString) => {
-  if (Array.isArray(string) && searchString) {
-    return string[string.length - 1] === searchString;
+const endsWith = (string, suffix) => {
+  if (Array.isArray(string) && suffix) {
+    return string[string.length - 1] === suffix
   }
 
-  if (typeof searchString === 'number') {
-    searchString = '' + searchString
+  if (typeof suffix === 'number') {
+    suffix = '' + suffix
   }
 
-  if (typeof searchString !== 'string') {
+  if (typeof suffix !== 'string') {
     return false
   }
 
-  return string.slice(-searchString.length) === searchString
+  return string.slice(-suffix.length) === suffix
 }
 
 module.exports = {
   isValidEmail,
   isValidNumber,
   ucFirstLetter,
-  endWith
+  endsWith
 }
