@@ -1,6 +1,6 @@
 {
   "name": "@davide-demos/beetle-string-utils",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A wonderful module for beetle nodejs course",
   "main": "index.js",
   "scripts": {
@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "standard": "^12.0.1",
-    "tap": "^12.6.0"
+    "tap": "^14.2.2"
   }
 }
